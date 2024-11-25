@@ -1,0 +1,88 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    background-color: #ffe;
+}
+.DivisorPersonalizado{
+    height: 15px; 
+    background-color: darkgray;
+    margin-bottom: 50px;
+}
+#DivQuiz{
+    background-color: white;
+    width: 700px;
+    height: 3125px;
+    border: 3px black solid;
+}
+/*---------------------------*/
+#TelaInicial{
+    display: grid;
+    border: 5px lightgray solid;
+    height: 300px;
+    text-align: center;
+}
+
+/*---------------------------*/
+.CartaoPergunta{
+    margin-left: 100px;
+    display: grid;
+    justify-content: center;
+    background-color: rgb(22, 0, 43);
+    padding-bottom: 25px;
+    width: 500px;
+    color: white;
+    border: 5px rgb(129, 0, 180) solid;
+}
+
+.NumPergunta{
+    margin-left: 100px;
+    background-color: rgb(129, 0, 180);
+    border-bottom: 5px rgb(12, 0, 80) solid;
+    padding: 1%;
+    font-size: 24px;
+    width: 250px;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.TituloPergunta{
+    width: 350px;
+    text-align: center;
+}
+.OpcaoPergunta{
+    font-weight: 700;
+    text-decoration: underline;
+}
+.OpcaoPergunta :hover{
+    color: blue;
+    cursor: pointer;
+}
+
+/*---------------------------*/
+#CartaoFinal{
+    justify-content: center;
+    display: grid;
+}
+.TituloResultado{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 0;
+    width: 250px;
+    border: 2px red solid;
+}
+
+#BotaoResultado{
+    width: 150px;
+    height: 50px;
+    margin-left: 50px;
+    background-color: yellow;
+    border: solid 3px black;
+    border-radius: 10px;
+    font-weight: 900;
+    text-align: center;
+}

@@ -1,32 +1,228 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Inicio do Quiz</title>
+    <title>Quiz</title>
     <link rel="stylesheet" href="assets/css/StyleQuiz.css">
 </head>
 <body>
-    <h1>Pergunta 1</h1>
-    <h2>Qual seu elemento favorito?</h2>
-    <label><input type="radio" name="pergunta1" value="squirtle">Água</label>
-    <label><input type="radio" name="pergunta1" value="bulbasaur">Terra</label>
-    <label><input type="radio" name="pergunta1" value="charmander">Fogo</label>
-    <label><input type="radio" name="pergunta1" value="pidgeotto">Ar</label>
-    <hr>
+    <div id="DivQuiz">
+        <div style="height: 15px; background-color: darkgray;"></div>
+        <div id="TelaInicial">
+            <h1>BOAS VINDAS AO QUIZ < NOME DO QUIZ>!</h1>
+            <h3 style="font-style: italic;">João Pedro L.Vieira<br>Aluno 2</h3>
+        </div>
+        <div class="DivisorPersonalizado"></div>
+        <h1 class="NumPergunta">Pergunta 1</h1>
+        <div class="CartaoPergunta">
+            <h2 class="TituloPergunta">Qual seu elemento favorito?</h2>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta1" value="squirtle">Água</label class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta1" value="bulbasaur">Terra</label class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta1" value="charmander">Fogo</label class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta1" value="pidgeotto">Ar</label class="OpcaoPergunta">
 
-    <h1>Pergunta 2</h1>
-    <h2>Qual seu animal favorito?</h2>
-    <label><input type="radio" name="pergunta2" value="squirtle">Tartaruga</label>
-    <label><input type="radio" name="pergunta2" value="bulbasaur">Sapo</label>
-    <label><input type="radio" name="pergunta2" value="charmander">Lagarto</label>
-    <label><input type="radio" name="pergunta2" value="pidgeotto">Pássaro</label>
-    <hr>
+            </div>
+        </div>
+        <h1 class="NumPergunta">Pergunta 2</h1>
+        <div class="CartaoPergunta">
+            <h2 class="TituloPergunta">Qual seu animal favorito?</h2>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta2" value="squirtle">Tartaruga</label class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta2" value="bulbasaur">Sapo</label class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta2" value="charmander">Lagarto</label class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta2" value="pidgeotto">Pássaro</label class="OpcaoPergunta">
 
-    <h1>resultado</h1>
-    <button onclick="testar()">RESULTADO</button>
-    <h1 id="resultado"></h1>
+            </div>
+        </div>
+        <h1 class="NumPergunta">Pergunta 3</h1>
+        <div class="CartaoPergunta">
+            <h2 class="TituloPergunta">Faça sua pergunta aqui</h2>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta3" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta3" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta3" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta3" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+
+            </div>
+        </div>
+        <h1 class="NumPergunta">Pergunta 4</h1>
+        <div class="CartaoPergunta">
+            <h2 class="TituloPergunta">Faça sua pergunta aqui</h2>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta4" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta4" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta4" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta4" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+
+            </div>
+        </div>
+        <h1 class="NumPergunta">Pergunta 5</h1>
+        <div class="CartaoPergunta">
+            <h2 class="TituloPergunta">Faça sua pergunta aqui</h2>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta5" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta5" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta5" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta5" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+
+            </div>
+        </div>
+        <h1 class="NumPergunta">Pergunta 6</h1>
+        <div class="CartaoPergunta">
+            <h2 class="TituloPergunta">Faça sua pergunta aqui</h2>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta6" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta6" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta6" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta6" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+
+            </div>
+        </div>
+        <h1 class="NumPergunta">Pergunta 7</h1>
+        <div class="CartaoPergunta">
+            <h2 class="TituloPergunta">Faça sua pergunta aqui</h2>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta7" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta7" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta7" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta7" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+
+            </div>
+        </div>
+        <h1 class="NumPergunta">Pergunta 8</h1>
+        <div class="CartaoPergunta">
+            <h2 class="TituloPergunta">Faça sua pergunta aqui</h2>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta8" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta8" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta8" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta8" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+
+            </div>
+        </div>
+        <h1 class="NumPergunta">Pergunta 9</h1>
+        <div class="CartaoPergunta">
+            <h2 class="TituloPergunta">Faça sua pergunta aqui</h2>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta9" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta9" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta9" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta9" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+
+            </div>
+        </div>
+        <h1 class="NumPergunta">Pergunta 10</h1>
+        <div class="CartaoPergunta" style="margin-bottom: 75px;">
+            <h2 class="TituloPergunta">Faça sua pergunta aqui</h2>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta10" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta10" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta10" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+            <div class="OpcaoPergunta">
+                <label><input type="radio" name="pergunta10" value="OpcaoQuestao">OpcaoQuestao</label
+                    class="OpcaoPergunta">
+            </div>
+        </div>
+        <div class="DivisorPersonalizado"></div>
+        <div id="CartaoFinal">
+            <h1 class="TituloResultado">resultado</h1>
+            <button id="BotaoResultado" onclick="testar()">RESULTADO</button>
+            <h1 class="ResultadoFinal" id="resultado"></h1>
+        </div>
+    </div>
     <script>
         //construindo a função testar
-        function testar(){
+        function testar() {
             //declarando quatro contadores
             let contResult1 = 0;
             let contResult2 = 0;
@@ -82,7 +278,7 @@
 
             //redirecionando para página da opção final escolhida
             setTimeout(() => {
-                window.open(pagina+'.html');
+                window.open(pagina + '.html');
             }, 5000);
         }
     </script>
