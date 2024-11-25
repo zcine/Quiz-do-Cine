@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Result2</title>
+    <link rel="stylesheet" href="assets/css/StyleResults.css">
+</head>
+<body>
+    <h1>Seu resultado é: Result2</h1>
+    <h1 id="votos"></h1>
+    <img src="" alt="">
+    <script>
+        //obtendo item do localStorage -qnt de votos
+        let contResult2 = localStorage.getItem('Result2');
+        //Mostrando item em um h1
+        document.querySelector('#votos').innerHTML = 'Votos: ' + contResult2;
+    </script>
+</body>
+</html>

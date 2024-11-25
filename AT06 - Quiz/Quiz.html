@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Inicio do Quiz</title>
+    <link rel="stylesheet" href="assets/css/StyleQuiz.css">
+</head>
+<body>
+    <h1>Pergunta 1</h1>
+    <h2>Qual seu elemento favorito?</h2>
+    <label><input type="radio" name="pergunta1" value="squirtle">Água</label>
+    <label><input type="radio" name="pergunta1" value="bulbasaur">Terra</label>
+    <label><input type="radio" name="pergunta1" value="charmander">Fogo</label>
+    <label><input type="radio" name="pergunta1" value="pidgeotto">Ar</label>
+    <hr>
+
+    <h1>Pergunta 2</h1>
+    <h2>Qual seu animal favorito?</h2>
+    <label><input type="radio" name="pergunta2" value="squirtle">Tartaruga</label>
+    <label><input type="radio" name="pergunta2" value="bulbasaur">Sapo</label>
+    <label><input type="radio" name="pergunta2" value="charmander">Lagarto</label>
+    <label><input type="radio" name="pergunta2" value="pidgeotto">Pássaro</label>
+    <hr>
+
+    <h1>resultado</h1>
+    <button onclick="testar()">RESULTADO</button>
+    <h1 id="resultado"></h1>
+    <script>
+        //construindo a função testar
+        function testar(){
+            //declarando quatro contadores
+            let contResult1 = 0;
+            let contResult2 = 0;
+            let contResult3 = 0;
+            let contResult4 = 0;
+
+            //obtendo todos os radios e atribuindo a variável radios
+            let radios = document.querySelectorAll('input[type=radio]');
+            console.log(radios);
+
+            //percorrendo todas as posições da variável radios
+            radios.forEach(e => {
+                //testando os radios para ver se está selecionado
+                if (e.checked) {
+                    //testando qual o valor dos radios selecionados
+                    if (e.value == "Result1") {
+                        contResult1++;
+                    } else if (e.value == "Result2") {
+                        contResult2++;
+                    } else if (e.value == "Result3") {
+                        contResult3++;
+                    } else if (e.value == "Result4") {
+                        contResult4++;
+                    }
+                }
+            });
+
+            //criando uma variável resultado e atribuindo um
+            //texto interpolado com os contadores de cada opção final
+            let resultado = `Result1 = ${contResult1}<br> Result2 = ${contResult2}<br> Result3 = ${contResult3}<br> Result4 = ${contResult4}<br>`;
+
+            //mostrando os resultados em um h1
+            document.getElementById("resultado").innerHTML = resultado;
+
+            //localStorage - salvando contadores
+            localStorage.setItem('Result1', contResult1);
+            localStorage.setItem('Result2', contResult2);
+            localStorage.setItem('Result3', contResult3);
+            localStorage.setItem('Result4', contResult4);
+
+            //testando qual opção final escolhida
+            let maior = 0;
+            let pagina;
+            if (contResult1 > maior) {
+                pagina = 'Result1';
+            } else if (contResult2 > maior) {
+                pagina = 'Result2';
+            } else if (contResult3 > maior) {
+                pagina = 'Result3';
+            } else if (contResult4 > maior) {
+                pagina = 'Result4';
+            }
+
+            //redirecionando para página da opção final escolhida
+            setTimeout(() => {
+                window.open(pagina+'.html');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
