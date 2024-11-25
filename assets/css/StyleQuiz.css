@@ -58,7 +58,7 @@ body{
     text-decoration: underline;
 }
 .OpcaoPergunta :hover{
-    color: blue;
+    color: rgb(0, 191, 255);
     cursor: pointer;
 }
 
